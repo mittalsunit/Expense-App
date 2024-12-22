@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in - Expense tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../js/config.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="signup-container">
+        <div class="heading">
+          <h2>Log in</h2>
+        </div>
+        <div class="signup-fields">
+          <form id="login-form">
+            <div class="field">
+              <input
+                type="email"
+                id="email"
+                placeholder=" Email"
+                required
+              /><br />
+            </div>
+            <div class="field">
+              <input
+                type="password"
+                id="password"
+                placeholder=" Password"
+                required
+              /><br />
+            </div>
+            <span id="loginError" class="error-message"></span>
+            <div class="submit-btn-div">
+              <button type="submit">Log in</button><br />
+            </div>
+          </form>
+        </div>
+
+        <div class="link-container">
+          <p>Don't have an account?</p>
+          <a href="../signup/index.html" id="sign-in-link">Sign up?</a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
